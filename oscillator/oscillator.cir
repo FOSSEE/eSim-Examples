@@ -1,0 +1,24 @@
+* /home/fossee/eSim-Workspace/oscillator/oscillator.cir
+
+* EESchema Netlist Version 1.1 (Spice format) creation date: Tue Mar 29 15:10:10 2016
+
+* To exclude a component from the Spice Netlist add [Spice_Netlist_Enabled] user FIELD set to: N
+* To reorder the component spice node sequence add [Spice_Node_Sequence] user FIELD and define sequence: 2,1,0
+
+* Sheet Name: /
+Q1  out Net-_Q1-Pad2_ Net-_C3-Pad1_ NPN		
+R5  Net-_R2-Pad1_ out 8.6k		
+R2  Net-_R2-Pad1_ Net-_Q1-Pad2_ 56k		
+R6  Net-_C3-Pad1_ GND 1.5k		
+R3  Net-_Q1-Pad2_ GND 8.2k		
+R1  Net-_C1-Pad2_ Net-_Q1-Pad2_ 3k		
+C3  Net-_C3-Pad1_ GND 20u		
+C1  Net-_C1-Pad1_ Net-_C1-Pad2_ 1500p		
+C2  Net-_C2-Pad1_ Net-_C1-Pad1_ 1500p		
+C4  out Net-_C2-Pad1_ 1500p		
+R4  Net-_C1-Pad1_ GND 3k		
+R7  Net-_C2-Pad1_ GND 3k		
+v1  Net-_R2-Pad1_ GND DC		
+U1  out plot_v1		
+
+.end
