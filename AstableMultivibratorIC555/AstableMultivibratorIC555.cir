@@ -1,0 +1,20 @@
+* /home/fossee/eSim-Workspace/AstableMultivibratorIC555/AstableMultivibratorIC555.cir
+
+* EESchema Netlist Version 1.1 (Spice format) creation date: Fri May 27 16:42:56 2016
+
+* To exclude a component from the Spice Netlist add [Spice_Netlist_Enabled] user FIELD set to: N
+* To reorder the component spice node sequence add [Spice_Node_Sequence] user FIELD and define sequence: 2,1,0
+
+* Sheet Name: /
+X1  GND a out Net-_R1-Pad1_ Net-_C2-Pad1_ a Net-_R1-Pad2_ Net-_R1-Pad1_ LM555N		
+R1  Net-_R1-Pad1_ Net-_R1-Pad2_ 1k		
+R2  Net-_R1-Pad2_ a 10k		
+R3  out GND 1k		
+C1  a GND 100p		
+C2  Net-_C2-Pad1_ GND 0.01u		
+v1  Net-_R1-Pad1_ GND DC		
+U3  out plot_v1		
+U1  a plot_v1		
+U2  a IC		
+
+.end

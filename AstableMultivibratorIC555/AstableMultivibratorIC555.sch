@@ -1,0 +1,291 @@
+EESchema Schematic File Version 2
+LIBS:AstableMultivibratorIC555-rescue
+LIBS:eSim_Analog
+LIBS:eSim_Devices
+LIBS:eSim_Digital
+LIBS:eSim_Hybrid
+LIBS:eSim_Miscellaneous
+LIBS:eSim_Power
+LIBS:eSim_Sources
+LIBS:eSim_Subckt
+LIBS:eSim_User
+LIBS:eSim_Plot
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:AstableMultivibratorIC555-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L LM555N-RESCUE-AstableMultivibratorIC555 X1
+U 1 1 573D975F
+P 6000 3300
+F 0 "X1" H 6000 3250 60  0000 C CNN
+F 1 "LM555N" H 6000 3400 60  0000 C CNN
+F 2 "" H 5950 3300 60  0000 C CNN
+F 3 "" H 5950 3300 60  0000 C CNN
+	1    6000 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 573D98C8
+P 4550 2650
+F 0 "R1" H 4600 2780 50  0000 C CNN
+F 1 "1k" H 4600 2700 50  0000 C CNN
+F 2 "" H 4600 2630 30  0000 C CNN
+F 3 "" V 4600 2700 30  0000 C CNN
+	1    4550 2650
+	0    1    1    0   
+$EndComp
+$Comp
+L R R2
+U 1 1 573D98FD
+P 4550 3350
+F 0 "R2" H 4600 3480 50  0000 C CNN
+F 1 "10k" H 4600 3400 50  0000 C CNN
+F 2 "" H 4600 3330 30  0000 C CNN
+F 3 "" V 4600 3400 30  0000 C CNN
+	1    4550 3350
+	0    1    1    0   
+$EndComp
+$Comp
+L R R3
+U 1 1 573D9963
+P 6950 3500
+F 0 "R3" H 7000 3630 50  0000 C CNN
+F 1 "1k" H 7000 3550 50  0000 C CNN
+F 2 "" H 7000 3480 30  0000 C CNN
+F 3 "" V 7000 3550 30  0000 C CNN
+	1    6950 3500
+	0    1    1    0   
+$EndComp
+$Comp
+L C C1
+U 1 1 573D99D5
+P 4600 4000
+F 0 "C1" H 4625 4100 50  0000 L CNN
+F 1 "100p" H 4625 3900 50  0000 L CNN
+F 2 "" H 4638 3850 30  0000 C CNN
+F 3 "" H 4600 4000 60  0000 C CNN
+	1    4600 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C2
+U 1 1 573D9A41
+P 5300 3850
+F 0 "C2" H 5325 3950 50  0000 L CNN
+F 1 "0.01u" H 5325 3750 50  0000 L CNN
+F 2 "" H 5338 3700 30  0000 C CNN
+F 3 "" H 5300 3850 60  0000 C CNN
+	1    5300 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L DC v1
+U 1 1 573D9D4B
+P 3850 3500
+F 0 "v1" H 3650 3600 60  0000 C CNN
+F 1 "DC" H 3650 3450 60  0000 C CNN
+F 2 "R1" H 3550 3500 60  0000 C CNN
+F 3 "" H 3850 3500 60  0000 C CNN
+	1    3850 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 2400 6000 2700
+Wire Wire Line
+	6000 2450 4600 2450
+Wire Wire Line
+	4600 2450 4600 2550
+Wire Wire Line
+	4600 3250 4600 2850
+Wire Wire Line
+	4600 3850 4600 3550
+Wire Wire Line
+	4600 4150 4600 4300
+Wire Wire Line
+	4600 4300 7000 4300
+Wire Wire Line
+	6000 3900 6000 4400
+Wire Wire Line
+	5450 3300 5300 3300
+Wire Wire Line
+	5300 3300 5300 3700
+Wire Wire Line
+	5300 4000 6000 4000
+Connection ~ 6000 4000
+Wire Wire Line
+	5350 3550 5450 3550
+Wire Wire Line
+	5350 2300 5350 3550
+Connection ~ 5350 2450
+Wire Wire Line
+	6550 3550 6550 4150
+Wire Wire Line
+	6550 4150 5050 4150
+Wire Wire Line
+	5050 4150 5050 3050
+Wire Wire Line
+	5050 3700 4600 3700
+Connection ~ 4600 3700
+Wire Wire Line
+	5050 3050 5450 3050
+Connection ~ 5050 3700
+Wire Wire Line
+	7000 4300 7000 3700
+Connection ~ 6000 4300
+Wire Wire Line
+	6550 3300 6750 3300
+Wire Wire Line
+	6750 3300 6750 2600
+Wire Wire Line
+	6750 2600 4900 2600
+Wire Wire Line
+	4900 2600 4900 3050
+Wire Wire Line
+	4900 3050 4600 3050
+Connection ~ 4600 3050
+$Comp
+L GND #PWR01
+U 1 1 573DA32F
+P 6000 4400
+F 0 "#PWR01" H 6000 4150 50  0001 C CNN
+F 1 "GND" H 6000 4250 50  0000 C CNN
+F 2 "" H 6000 4400 50  0000 C CNN
+F 3 "" H 6000 4400 50  0000 C CNN
+	1    6000 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 573DA3CA
+P 3850 3950
+F 0 "#PWR02" H 3850 3700 50  0001 C CNN
+F 1 "GND" H 3850 3800 50  0000 C CNN
+F 2 "" H 3850 3950 50  0000 C CNN
+F 3 "" H 3850 3950 50  0000 C CNN
+	1    3850 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 3050 3850 2300
+Wire Wire Line
+	3850 2300 5350 2300
+$Comp
+L plot_v1 U3
+U 1 1 573DA485
+P 7000 2850
+F 0 "U3" H 7000 3350 60  0000 C CNN
+F 1 "plot_v1" H 7200 3200 60  0000 C CNN
+F 2 "" H 7000 2850 60  0000 C CNN
+F 3 "" H 7000 2850 60  0000 C CNN
+	1    7000 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L plot_v1 U1
+U 1 1 573DA4EA
+P 4850 3800
+F 0 "U1" H 4850 4300 60  0000 C CNN
+F 1 "plot_v1" H 5050 4150 60  0000 C CNN
+F 2 "" H 4850 3800 60  0000 C CNN
+F 3 "" H 4850 3800 60  0000 C CNN
+	1    4850 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7000 3400 7000 2650
+Wire Wire Line
+	6550 3050 7150 3050
+Connection ~ 7000 3050
+Wire Wire Line
+	4850 3600 4850 3750
+Connection ~ 4850 3700
+$Comp
+L IC U2
+U 1 1 573DA6EC
+P 6050 4150
+F 0 "U2" H 6350 4300 60  0000 C CNN
+F 1 "IC" H 6300 4500 60  0000 C CNN
+F 2 "" H 6050 4150 60  0000 C CNN
+F 3 "" H 6050 4150 60  0000 C CNN
+	1    6050 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 4100 6250 4150
+Connection ~ 6250 4150
+$Comp
+L PWR_FLAG #FLG03
+U 1 1 573DAEF2
+P 6300 4350
+F 0 "#FLG03" H 6300 4445 50  0001 C CNN
+F 1 "PWR_FLAG" H 6300 4530 50  0000 C CNN
+F 2 "" H 6300 4350 50  0000 C CNN
+F 3 "" H 6300 4350 50  0000 C CNN
+	1    6300 4350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6300 4350 6300 4300
+Connection ~ 6300 4300
+$Comp
+L PWR_FLAG #FLG04
+U 1 1 573DAF7E
+P 6000 2400
+F 0 "#FLG04" H 6000 2495 50  0001 C CNN
+F 1 "PWR_FLAG" H 6000 2580 50  0000 C CNN
+F 2 "" H 6000 2400 50  0000 C CNN
+F 3 "" H 6000 2400 50  0000 C CNN
+	1    6000 2400
+	1    0    0    -1  
+$EndComp
+Connection ~ 6000 2450
+Text GLabel 7150 3050 2    60   Input ~ 0
+out
+Text GLabel 4900 3800 3    60   Input ~ 0
+a
+Wire Wire Line
+	4900 3800 4900 3750
+Wire Wire Line
+	4900 3750 4850 3750
+$EndSCHEMATC

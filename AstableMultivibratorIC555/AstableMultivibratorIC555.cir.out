@@ -1,0 +1,26 @@
+* /home/fossee/esim-workspace/astablemultivibratoric555/astablemultivibratoric555.cir
+
+.include lm555n.sub
+* u2  a ic
+.ic v(a)=0
+x1 gnd a out net-_r1-pad1_ net-_c2-pad1_ a net-_r1-pad2_ net-_r1-pad1_ lm555n
+r1  net-_r1-pad1_ net-_r1-pad2_ 1k
+r2  net-_r1-pad2_ a 10k
+r3  out gnd 1k
+c1  a gnd 100p
+c2  net-_c2-pad1_ gnd 0.01u
+v1 net-_r1-pad1_ gnd  dc 5
+* u3  out plot_v1
+* u1  a plot_v1
+* u2  a ic
+.tran 50e-09 5e-06 0e-06
+
+* Control Statements 
+.control
+run
+print allv > plot_data_v.txt
+print alli > plot_data_i.txt
+plot v(out)
+plot v(a)
+.endc
+.end

@@ -1,4 +1,4 @@
-* /home/fossee/updatedexamples/half_adder/half_adder.cir
+* /home/fossee/esim-workspace/half_adder/half_adder.cir
 
 .include half_adder.sub
 x1 net-_u1-pad3_ net-_u1-pad4_ net-_u2-pad1_ net-_u2-pad2_ half_adder
