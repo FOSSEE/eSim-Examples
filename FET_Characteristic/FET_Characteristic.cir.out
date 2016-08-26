@@ -1,7 +1,6 @@
 * /home/fossee/updatedexamples/fet_characteristic/fet_characteristic.cir
 
-.include NJF.lib
-j1 id net-_j1-pad2_ gnd J2N3819
+j1  id net-_j1-pad2_ gnd njf
 vds1 net-_u_id1-pad1_ gnd  dc 10
 vgs1 net-_j1-pad2_ gnd  dc 0
 * u_id1  net-_u_id1-pad1_ id plot_i2

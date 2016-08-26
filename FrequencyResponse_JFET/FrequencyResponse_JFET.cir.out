@@ -1,10 +1,9 @@
 * /home/fossee/updatedexamples/frequencyresponse_jfet/frequencyresponse_jfet.cir
 
-.include NJF.lib
 c1  net-_c1-pad1_ in 1u
 c6  net-_c6-pad1_ gnd 0.1u
 v2 net-_r3-pad1_ gnd  dc 20
-j1 out net-_c1-pad1_ net-_c6-pad1_ J2N3819
+j1  out net-_c1-pad1_ net-_c6-pad1_ njf
 r3  net-_r3-pad1_ out 3k
 r2  gnd net-_c1-pad1_ 1meg
 r4  gnd net-_c6-pad1_ 470
@@ -13,7 +12,7 @@ v1 in gnd  ac 0.1m 0
 * u3  out plot_log
 * u2  out plot_phase
 * u4  out plot_db
-.ac dec 100 10KHz 100Meg
+.ac dec 100 10KHz 100KHz
 
 * Control Statements 
 .control

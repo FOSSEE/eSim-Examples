@@ -1,7 +1,6 @@
 * /home/fossee/updatedexamples/bjt_cb_config/bjt_cb_config.cir
 
-.include NPN.lib
-q1 net-_q1-pad1_ gnd net-_q1-pad3_ Q2N2222
+q1  net-_q1-pad1_ gnd net-_q1-pad3_ npn
 v1 vcb gnd  dc 12
 r1  net-_r1-pad1_ net-_q1-pad1_ 1k
 r2  net-_q1-pad3_ ie 1k

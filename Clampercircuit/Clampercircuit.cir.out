@@ -1,12 +1,11 @@
 * /home/fossee/esim-workspace/clampercircuit/clampercircuit.cir
 
-.include D.lib
 v1  in_neg gnd sine(0 5 50 0 0)
 c1  out_neg in_neg 1n
-d1 out_neg gnd 1N4148
+d1  out_neg gnd d
 v2  in_pos gnd sine(0 5 50 0 0)
 c2  out_pos in_pos 1n
-d2 gnd out_pos 1N4148
+d2  gnd out_pos d
 * u1  in_neg plot_v1
 * u2  out_neg plot_v1
 * u3  in_pos plot_v1

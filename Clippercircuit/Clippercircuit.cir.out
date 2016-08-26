@@ -1,9 +1,8 @@
 * /home/fossee/esim-workspace/clippercircuit/clippercircuit.cir
 
-.include D.lib
 v1  in gnd sine(0 5 50 0 0)
-d1 gnd out 1N4148
-d2 out gnd 1N4148
+d1  gnd out d
+d2  out gnd d
 r1  in out 1k
 * u1  in plot_v1
 * u2  out plot_v1

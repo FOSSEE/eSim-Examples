@@ -1,7 +1,6 @@
 * /home/fossee/updatedexamples/halfwave_rectifier/halfwave_rectifier.cir
 
-.include D.lib
-d1 in out 1N4148
+d1  in out d
 r1  out gnd 1k
 v1  in gnd sine(0 20 50 0 0)
 * u2  in plot_v1
